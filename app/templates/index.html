@@ -4,13 +4,136 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Berkah Angsana Teknika</title>
     <link rel="icon" type="image/x-icon" href="../static/favicon.ico">
 </head>
 <body>
+    <!-- Navigation -->
+    <nav class="flex items-center justify-between flex-wrap bg-white p-4">
+        <div class="flex items-center flex-no-shrink text-[#FD2327] mr-6">
+    			<img src="../static/logo.png" alt="logo" class="w-11 h-11 ml-6 mr-2">
+          <span class="font-semibold text-xl tracking-tight">PT. Berkah Angsana Teknika</span>
+        </div>
+        <div class="block lg:hidden">
+          <button class="flex items-center px-3 py-2 border rounded text-teal-lighter border-teal-light hover:text-white hover:border-white">
+            <svg class="h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+          </button>
+        </div>
+        <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+          <div class="text-sm lg:flex-grow text-center text-[#FD2327]">
+            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 font-bold hover:text-[#FD8C23] mr-10">
+              BERANDA
+            </a>
+            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 font-bold hover:text-[#FD8C23] mr-10">
+              TENTANG KAMI
+            </a>
+            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 font-bold hover:text-[#FD8C23] mr-10">
+              PROJECT
+            </a>
+            </a>
+            <!-- <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 font-bold hover:text-[#FD8C23] mr-10">
+              Blog
+            </a> -->
+            </a>
+            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 font-bold hover:text-[#FD8C23]">
+              KONTAK
+            </a>
+          </div>
+          <!-- <div>
+            <a href="#" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-[#FD2327] bg-[#FD2327] hover:border-[#FD8C23] hover:text-white hover:bg-[#FD8C23] mt-4 lg:mt-0">Login</a>
+          </div> -->
+        </div>
+      </nav>
+
+			<!-- Carousel -->
+			<div id="carouselExampleCaptions" class="carousel slide relative" data-bs-ride="carousel">
+				<div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
+					<button
+						type="button"
+						data-bs-target="#carouselExampleCaptions"
+						data-bs-slide-to="0"
+						class="active"
+						aria-current="true"
+						aria-label="Slide 1"
+					></button>
+					<button
+						type="button"
+						data-bs-target="#carouselExampleCaptions"
+						data-bs-slide-to="1"
+						aria-label="Slide 2"
+					></button>
+					<button
+						type="button"
+						data-bs-target="#carouselExampleCaptions"
+						data-bs-slide-to="2"
+						aria-label="Slide 3"
+					></button>
+				</div>
+				<div class="carousel-inner relative w-full overflow-hidden">
+					<div class="carousel-item active relative float-left w-full">
+						<img
+							src="../static/carousel (1).jpg"
+							class="block w-full"
+							alt="..."
+						/>
+						<div class="carousel-caption hidden md:block absolute text-center">
+							<h5 class="text-xl">First slide label</h5>
+							<p>Some representative placeholder content for the first slide.</p>
+						</div>
+					</div>
+					<div class="carousel-item relative float-left w-full">
+						<img
+							src="../static/carousel (2).jpg"
+							class="block w-full"
+							alt="..."
+						/>
+						<div class="carousel-caption hidden md:block absolute text-center">
+							<h5 class="text-xl">Second slide label</h5>
+							<p>Some representative placeholder content for the second slide.</p>
+						</div>
+					</div>
+					<div class="carousel-item relative float-left w-full">
+						<img
+							src="https://mdbootstrap.com/img/Photos/Slides/img%20(23).jpg"
+							class="block w-full"
+							alt="..."
+						/>
+						<div class="carousel-caption hidden md:block absolute text-center">
+							<h5 class="text-xl">Third slide label</h5>
+							<p>Some representative placeholder content for the third slide.</p>
+						</div>
+					</div>
+				</div>
+				<button
+					class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+					type="button"
+					data-bs-target="#carouselExampleCaptions"
+					data-bs-slide="prev"
+				>
+					<span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button
+					class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+					type="button"
+					data-bs-target="#carouselExampleCaptions"
+					data-bs-slide="next"
+				>
+					<span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+</div>
     <h1 class="text-3xl font-bold italic">
         Hello, World
     </h1>
+    <!-- <img src="../static/logo.png" alt="logo"> -->
+	
+	<!-- close js -->
+	<script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
 </body>
 </html>
